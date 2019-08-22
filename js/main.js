@@ -22,7 +22,7 @@ $(document).ready(function() { // 6,32 5,38 2,34
     foregroundColor: '#0CC5FA',
     backgroundColor: '#001D26',
     animateInView: true,
-    percent: 95,
+    percent: 98,
     percentageY: 25,
     percentageTextSize: 16,
     fontColor: '#0CC5FA',
@@ -39,7 +39,7 @@ $(document).ready(function() { // 6,32 5,38 2,34
     foregroundColor: '#AED4EA',
     backgroundColor: '#0C2531',
     animateInView: true,
-    percent: 80,
+    percent: 96,
     percentageY: 25,
     percentageTextSize: 16,
     fontColor: '#AED4EA',
@@ -55,7 +55,7 @@ $(document).ready(function() { // 6,32 5,38 2,34
     foregroundColor: '#F47701',
     backgroundColor: '#261300',
     animateInView: true,
-    percent: 93,
+    percent: 95,
     percentageY: 25,
     percentageTextSize: 16,
     fontColor: '#F47701',
@@ -71,7 +71,7 @@ $(document).ready(function() { // 6,32 5,38 2,34
     foregroundColor: '#FF3918',
     backgroundColor: '#260600',
     animateInView: true,
-    percent: 30,
+    percent: 75,
     percentageY: 25,
     percentageTextSize: 16,
     fontColor: '#FF3918',
@@ -87,7 +87,7 @@ $(document).ready(function() { // 6,32 5,38 2,34
     foregroundColor: '#00E4BC',
     backgroundColor: '#002620',
     animateInView: true,
-    percent: 80,
+    percent: 89,
     percentageY: 25,
     percentageTextSize: 16,
     fontColor: ' #00E4BC',
@@ -103,7 +103,7 @@ $(document).ready(function() { // 6,32 5,38 2,34
     foregroundColor: '#915DBC',
     backgroundColor: '#1F003F',
     animateInView: true,
-    percent: 75,
+    percent: 85,
     percentageY: 25,
     percentageTextSize: 16,
     fontColor: '#915DBC',
@@ -119,7 +119,7 @@ $(document).ready(function() { // 6,32 5,38 2,34
     foregroundColor: '#E071F9',
     backgroundColor: '#2A0033',
     animateInView: true,
-    percent: 90,
+    percent: 94,
     percentageY: 25,
     percentageTextSize: 16,
     fontColor: '#E071F9',
@@ -129,3 +129,54 @@ $(document).ready(function() { // 6,32 5,38 2,34
     textColor: '#E071F9',
   });
 });
+
+
+
+(function() {
+
+    let filter = document.querySelector(".filter");
+    let filterBtns = Array.from(document.querySelectorAll("ul li"));
+    let elements = Array.from(filter.children);
+    let lis =  Array.from(document.querySelectorAll("li"));
+
+    function filterCardapio(e) {
+        let result = elements.filter((element) => {
+            element.className = element.className.replace(" hide", "");
+            return e.target.id !== element.dataset.food;
+        });
+
+        makeChange(result);
+
+        if(e.target.id == "all") {
+            for(let element of elements) {
+                element.classList.remove("hide");
+            }
+        }
+    }
+
+    function makeChange(result) {
+        result.forEach(element => {
+            if(element.classList.contains("hide")) {
+                element.className = element.className.replace(" hide", "");
+            } else if(!element.classList.contains("hide")) {
+                element.className += " hide";
+            } else if(element.dataset.food) {
+                element.classList.remove("hide");
+            }
+        });
+    }
+
+    function currentBtn(e) {
+       lis.forEach(li => {
+            li.classList.remove("current");
+            e.target.classList.add("current")
+        });
+    }
+
+    function renderClick(e) {
+        filterCardapio(e);
+        currentBtn(e);
+    }
+
+    filterBtns.forEach((filterBtn => filterBtn.addEventListener("click", renderClick)));
+})();
