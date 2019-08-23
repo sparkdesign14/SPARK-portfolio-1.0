@@ -319,10 +319,21 @@
   .item a {
     filter: inherit;
   }
-
+  
+  .gallery_content ul { 
+    margin: 7.3rem auto 3.6rem;
+  }
+  
   .gallery_content p {
-    width: 73%;
-    text-align: justify
+    width: 100%;
+    text-align: justify;
+    box-sizing: border-box;
+    padding: 3rem;
+    background-color: #00000021;
+    margin: 0 0 4rem;
+    border-bottom: 1px solid teal;
+    border-top: 1px solid teal;
+    box-shadow: 2px 8px 8px rgba(0, 0, 0, 0.3)
   }
 
   .gallery_content ul li {
