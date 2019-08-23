@@ -5,6 +5,7 @@
   background-position: center;
   width: 100%;
   min-height: 100vh;
+  max-width: 1920px;
 }
 
 .design-page_wrap {
@@ -13,6 +14,7 @@
   background-position: center;
   width: 100%;
   min-height: 100vh;
+  max-width: 1920px;
 }
 
 .photo-page_wrap {
@@ -21,6 +23,7 @@
   background-position: center;
   width: 100%;
   min-height: 100vh;
+  max-width: 1920px;
 }
 
 .video-page_wrap {
@@ -29,6 +32,7 @@
   background-position: center;
   width: 100%;
   min-height: 100vh;
+  max-width: 1920px;
 }
 
 .gallery_content ul li {
