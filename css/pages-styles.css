@@ -353,7 +353,7 @@
     border-bottom: 1px solid teal;
     border-top: 2px solid teal;
   }
-
+  .videogallery img {width: 80%;}
 }
 
 @media(max-width:900px) {
