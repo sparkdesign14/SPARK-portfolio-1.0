@@ -5,7 +5,7 @@
   background-position: center;
   width: 100%;
   min-height: 100vh;
-}
+ }
 
 .design-page_wrap {
   background-image: url(../img/skill-bg2.jpg);
@@ -13,7 +13,7 @@
   background-position: center;
   width: 100%;
   min-height: 100vh;
-}
+ }
 
 .photo-page_wrap {
   background-image: url(../img/photo-bg.jpg);
@@ -21,7 +21,7 @@
   background-position: center;
   width: 100%;
   min-height: 100vh;
-}
+ }
 
 .video-page_wrap {
   background-image: url(../img/video-bg.jpg);
@@ -29,6 +29,7 @@
   background-position: center;
   width: 100%;
   min-height: 100vh;
+  padding-bottom: 2rem;
 }
 
 .gallery_content ul li {
@@ -40,15 +41,24 @@
   display: block;
 }
 
+.vidoegallery_content {
+  padding: 6.5rem 0 3rem;
+}
+
 .vidoegallery_content p {
   width: 70%;
   max-width: 1300px;
   margin: auto;
-  padding: 5rem 0 3rem;
+  padding: 3rem;
   color: white;
-  text-align: center;
+  text-align: justify;
   line-height: 1.4;
   font-size: 1.2rem;
+  background: #0000002e;
+  border: 1px solid teal;
+  border-top: 2px solid teal;
+  box-shadow: 2px 8px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 0 0 5px 5px;
 }
 
 .videogallery {
@@ -57,13 +67,22 @@
   justify-content: center;
   max-width: 1920px;
 }
-.videogallery iframe{
+.videogallery img {
   width: 45rem;
   margin: 1.5rem;
   border-radius: 5px;
   border: 1px solid #1B9B97;
   box-shadow: 5px 8px 5px rgba(0, 0, 0, 0.3);
 }
+
+.videogallery iframe {
+  width: 45rem;
+  margin: 1.5rem;
+  border-radius: 5px;
+  border: 1px solid #1B9B97;
+  box-shadow: 5px 8px 5px rgba(0, 0, 0, 0.3);
+}
+
 /* Pages nav mod */
 @media (min-width: 769px) {
   .navigation-pg-lg {
@@ -177,6 +196,11 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
+<<<<<<< HEAD
+  margin: auto;
+=======
+  margin:auto;
+>>>>>>> 58b1cb68dd6bc21b3f308ba18cee49bba5f80b62
 }
 
 .gallery_content {
@@ -260,8 +284,16 @@
   box-shadow: 2px 8px 8px rgba(0, 0, 0, 0.3);
 }
 
-.item a {
+.logogs {
   filter: grayscale();
+}
+
+.logogs:hover {
+  filter: none;
+}
+
+.item a {
+  filter: grayscale(0.7);
   display: flex;
   transition: all 0.4s;
 }
@@ -309,6 +341,18 @@
   .filter {
     grid-template-columns: repeat(1, 32rem);
   }
+
+  .vidoegallery_content {
+    padding: 9.5rem 0 3rem;
+  }
+
+  .vidoegallery_content p {
+    width: auto;
+    border: 0;
+    border-bottom: 1px solid teal;
+    border-top: 2px solid teal;
+  }
+
 }
 
 @media(max-width:900px) {
@@ -316,13 +360,36 @@
     flex-direction: column;
   }
 
+  .logogs {
+    filter: none;
+  }
+
   .item a {
     filter: inherit;
   }
+<<<<<<< HEAD
 
+  .gallery_content ul {
+    margin: 7.3rem auto 3.6rem;
+  }
+
+=======
+  
+  .gallery_content ul { 
+    margin: 7.3rem auto 3.6rem;
+  }
+  
+>>>>>>> 58b1cb68dd6bc21b3f308ba18cee49bba5f80b62
   .gallery_content p {
-    width: 73%;
-    text-align: justify
+    width: 100%;
+    text-align: justify;
+    box-sizing: border-box;
+    padding: 3rem;
+    background-color: #00000021;
+    margin: 0 0 4rem;
+    border-bottom: 1px solid teal;
+    border-top: 1px solid teal;
+    box-shadow: 2px 8px 8px rgba(0, 0, 0, 0.3)
   }
 
   .gallery_content ul li {
