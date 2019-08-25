@@ -5,7 +5,7 @@
   background-position: center;
   width: 100%;
   min-height: 100vh;
- }
+}
 
 .design-page_wrap {
   background-image: url(../img/skill-bg2.jpg);
@@ -13,7 +13,7 @@
   background-position: center;
   width: 100%;
   min-height: 100vh;
- }
+}
 
 .photo-page_wrap {
   background-image: url(../img/photo-bg.jpg);
@@ -21,7 +21,7 @@
   background-position: center;
   width: 100%;
   min-height: 100vh;
- }
+}
 
 .video-page_wrap {
   background-image: url(../img/video-bg.jpg);
@@ -196,11 +196,7 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
-<<<<<<< HEAD
   margin: auto;
-=======
-  margin:auto;
->>>>>>> 58b1cb68dd6bc21b3f308ba18cee49bba5f80b62
 }
 
 .gallery_content {
@@ -367,19 +363,11 @@
   .item a {
     filter: inherit;
   }
-<<<<<<< HEAD
 
   .gallery_content ul {
     margin: 7.3rem auto 3.6rem;
   }
 
-=======
-  
-  .gallery_content ul { 
-    margin: 7.3rem auto 3.6rem;
-  }
-  
->>>>>>> 58b1cb68dd6bc21b3f308ba18cee49bba5f80b62
   .gallery_content p {
     width: 100%;
     text-align: justify;
