@@ -5,6 +5,8 @@
   background-position: center;
   width: 100%;
   min-height: 100vh;
+  animation: textFade 0.8s 0.8s;
+  animation-fill-mode: backwards;
 }
 
 .design-page_wrap {
@@ -13,6 +15,8 @@
   background-position: center;
   width: 100%;
   min-height: 100vh;
+  animation: textFade 0.8s 0.8s;
+  animation-fill-mode: backwards;
 }
 
 .photo-page_wrap {
@@ -21,6 +25,8 @@
   background-position: center;
   width: 100%;
   min-height: 100vh;
+  animation: textFade 0.8s 0.8s;
+  animation-fill-mode: backwards;
 }
 
 .video-page_wrap {
@@ -30,6 +36,8 @@
   width: 100%;
   min-height: 100vh;
   padding-bottom: 2rem;
+  animation: textFade 0.8s 0.8s;
+  animation-fill-mode: backwards;
 }
 
 .totop {
