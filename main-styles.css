@@ -347,6 +347,8 @@ body {
   max-height: 1100px;
   width: 100%;
   position: relative;
+  animation: textFade 0.8s 0.8s;
+  animation-fill-mode: backwards;
 }
 
 .planet-container {
